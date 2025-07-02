@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background: #561313;
+}
+nav {
+    background: rgb(86, 19, 19);
+    width: 100%;
+}
+nav:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+nav ul {
+    list-style: none;
+    position: relative;
+    align-items: center;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+    color: #9a4b4b;
+}
+nav ul li a {
+    color: rgb(201, 191, 191);
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 16px;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+/* nav ul li a:hover {
+    border-radius: 5px;
+    border-bottom: 1px solid #33ffff;
+} */
+.clickable:hover {
+    border-radius: 5px;
+    border-bottom: 1px solid #ffffff;
+    cursor: pointer;
+}
+nav ul ul {
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+}
+nav ul :hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    background-color: #773c3c;
+    position: relative;
+    margin: 0px;
+    width: 200px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid;
+}
+
+.range-input {
+    background: bd9999;
+    -webkit-appearance: none;
+    height: 2px;
+    outline: none;
+    border-radius: 2px;
+}
+
+.range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #bd9999;
+    cursor: pointer;
+}
+.range-input::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #bd9999;
+    cursor: pointer;
+}
